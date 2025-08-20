@@ -28,6 +28,10 @@ enter the directory
 ```bash
 cd rasnas
 ```
+put raspi password into .env
+```bash
+echo "RASPI_SUDO_PASSWORD='yourpassword'" >> .env
+```
 and run the setup script  
 ```bash
 bash ./setup.sh
