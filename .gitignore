@@ -1,0 +1,4 @@
+.venv
+*.env*
+*IGNORE*
+mounted_drives.txt
