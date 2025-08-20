@@ -13,6 +13,7 @@ Here's what it uses (and automatically installs):
 - [samba](https://www.samba.org/) - for LAN file sharing
 - [gum](https://github.com/charmbracelet/gum) - for making shell script more interactive
 - [uv](https://github.com/astral-sh/uv) - for python venv and version management
+- [tmux](https://github.com/tmux/tmux) - for making server attachable and keep running in background
 - You can also use [Tailscale](https://tailscale.com/) or a VPN of your choice to access your files from anywhere. [Install](https://tailscale.com/download/linux)
 
 ## Setup
