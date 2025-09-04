@@ -163,7 +163,7 @@ main_menu() {
         for drive in $WHICH_DRIVES; do
             IFS=',' read -r name label size <<< "$drive"
             sudo mkdir -p "$MOUNT_DIRECTORY/$label"
-            sudo mount /dev/"$name" "$MOUNT_DIRECTORY/$label"
+            sudo mount -o uid=1000,gid=1000,umask=000 /dev/"$name" "$MOUNT_DIRECTORY/$label"
             echo "Mounted /dev/$name to $MOUNT_DIRECTORY/$label"
             sudo chmod -R u+w "$MOUNT_DIRECTORY/$label"
         done
